@@ -20,6 +20,9 @@ The coding bootcamp challenge#6 involved creating a dashboard whihc provides wea
 
 ![weather-dashboard](https://user-images.githubusercontent.com/120338398/221286885-c965fa0e-c211-46a2-ba09-c9b8549909f6.png)
 
+![screen_w_ls](https://user-images.githubusercontent.com/120338398/221290077-b59e0b3a-c2bb-4eb6-9bbc-9590f1aefc61.png)
+
+
 
 <H3>Link to the Weather Dashboard</H3> 
 https://bootcamparankush.github.io/somraj-weather-dashboard/
