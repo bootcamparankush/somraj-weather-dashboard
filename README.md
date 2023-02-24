@@ -8,13 +8,17 @@ The coding bootcamp challenge#6 involved creating a dashboard whihc provides wea
 
 
 <H2>Technical Elements:</H2>
-HTML
-CSS
-JavaScript
-JSON
-jQuery
-Bootstrap
-OpenWeather API
+<ul>HTML</ul>
+<ul>CSS</ul>
+<ul>JavaScript</ul>
+<ul>JSON</ul>
+<ul>jQuery</ul>
+<ul>Bootstrap</ul>
+<ul>OpenWeather API</ul>
+
+<H2>Screen shot of the weather dashboard</H2>
+
+![weather-dashboard](https://user-images.githubusercontent.com/120338398/221286885-c965fa0e-c211-46a2-ba09-c9b8549909f6.png)
 
 
-<H3 href ="URL" ></H3> 
+<H3>Link to the weather dash</H3> 
