@@ -21,4 +21,8 @@ The coding bootcamp challenge#6 involved creating a dashboard whihc provides wea
 ![weather-dashboard](https://user-images.githubusercontent.com/120338398/221286885-c965fa0e-c211-46a2-ba09-c9b8549909f6.png)
 
 
-<H3>Link to the weather dash</H3> 
+<H3>Link to the Weather Dashboard</H3> 
+https://bootcamparankush.github.io/somraj-weather-dashboard/
+
+<H3>Credits:</H3>
+Openweather API, Amy Bethany, Parankush Somraj
