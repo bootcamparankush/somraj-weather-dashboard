@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="bg-dark"> 
+    <header class="bg-primary"> 
         <h1 class="p-2 text-light text-center h1">Weather Dashboard</h1>
     </header>
 
@@ -30,16 +30,20 @@
                         <button type="submit" class="btn btn-primary mb-3"><span class="oi oi-magnifying-glass"></span></button>
                     </form>
 
-                    <!-- search history-->
+                    <!-- display search history-->
                     <ul class="list-group" id="search-history">
                     </ul>
 
                 </div>
 
-                <!-- results section -->
+                <!-- display results section -->
                 <div class="col-md-9">
 
-                    <!-- city weather data -->
+                    <!-- display city weather data 
+                    Acceptance Criteria  I am presented with the city name, 
+                    the date, an icon representation of weather conditions, 
+                    the temperature, the humidity, and the wind speed-->
+
                     <div class="card mt-2">
                         <div class="card-body">
                             <div class="d-flex flex-row ">
@@ -52,7 +56,10 @@
                         </div>  
                     </div>
                     
-                    <!-- 5-day forecast -->
+                    <!-- Display 5-day forecast data 
+                Acceptance Critera: I am presented with a 5-day forecast that displays the date, 
+                an icon representation of weather conditions, 
+                the temperature, the wind speed, and the humidity-->
                     <div>
                         <h2 class="card-title mt-3">5-Day Forecast:</h2>
                         <div class="row justify-content-between" id="five-day">

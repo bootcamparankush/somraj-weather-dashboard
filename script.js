@@ -1,9 +1,9 @@
 // array to hold the users search history
 let searchHistory = []
-let lastCitySearched = ""
+let lastcityLookup = ""
 
 // api call to openweathermap.org
-let getCityWeather = function(city) {
+let getcityWeather = function(city) {
     // format the OpenWeather api url
     let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=c724f407df1e6d5fb5553f9426c1bd21&units=imperial";
 
@@ -22,7 +22,7 @@ let getCityWeather = function(city) {
             }
         })  
 
-        // alert user if there is no responce from OpenWeather
+        // alert user if there is no response from OpenWeather
         .catch(function(error) {
             alert("Unable to connect to OpenWeather");
         })
@@ -38,8 +38,8 @@ let searchSubmitHandler = function(event) {
 
     // check if the search field has a value
     if(cityName) {
-        // pass the value to getCityWeather function
-        getCityWeather(cityName);
+        // pass the value to getcityWeather function
+        getcityWeather(cityName);
 
         // clear the search input
         $("#cityname").val("");
@@ -111,7 +111,7 @@ let displayWeather = function(weatherData) {
         });
 
     // save the last city searched
-    lastCitySearched = weatherData.name;
+    lastcityLookup = weatherData.name;
 
     // save to the search history using the api's name value for consistancy
     // this also keeps searches that did not return a result from populating the array
@@ -130,8 +130,8 @@ let saveSearchHistory = function (city) {
     // save the searchHistory array to local storage
     localStorage.setItem("weatherSearchHistory", JSON.stringify(searchHistory));
 
-    // save the lastCitySearched to local storage
-    localStorage.setItem("lastCitySearched", JSON.stringify(lastCitySearched));
+    // save the lastcityLookup to local storage
+    localStorage.setItem("lastcityLookup", JSON.stringify(lastcityLookup));
 
     // display the searchHistory array
     loadSearchHistory();
@@ -140,15 +140,15 @@ let saveSearchHistory = function (city) {
 // function to load saved city search history from local storage
 let loadSearchHistory = function() {
     searchHistory = JSON.parse(localStorage.getItem("weatherSearchHistory"));
-    lastCitySearched = JSON.parse(localStorage.getItem("lastCitySearched"));
+    lastcityLookup = JSON.parse(localStorage.getItem("lastcityLookup"));
   
-    // if nothing in localStorage, create an empty searchHistory array and an empty lastCitySearched string
+    // if nothing in localStorage, create an empty searchHistory array and an empty lastcityLookup string
     if (!searchHistory) {
         searchHistory = []
     }
 
-    if (!lastCitySearched) {
-        lastCitySearched = ""
+    if (!lastcityLookup) {
+        lastcityLookup = ""
     }
 
     // clear any previous values from th search-history ul
@@ -166,8 +166,8 @@ let loadSearchHistory = function() {
 loadSearchHistory();
 
 // start page with the last city searched if there is one
-if (lastCitySearched != ""){
-    getCityWeather(lastCitySearched);
+if (lastcityLookup != ""){
+    getcityWeather(lastcityLookup);
 }
 
 // event handlers
@@ -175,6 +175,6 @@ $("#search-form").submit(searchSubmitHandler);
 $("#search-history").on("click", function(event){
     // get the links id value
     let prevCity = $(event.target).closest("a").attr("id");
-    // pass it's id value to the getCityWeather function
-    getCityWeather(prevCity);
+    // pass it's id value to the getcityWeather function
+    getcityWeather(prevCity);
 });
