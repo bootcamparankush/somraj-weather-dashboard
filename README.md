@@ -28,4 +28,4 @@ The coding bootcamp challenge#6 involved creating a dashboard whihc provides wea
 https://bootcamparankush.github.io/somraj-weather-dashboard/
 
 <H3>Contributions and Credits:</H3>
-Openweather API, Amy Metheny (bootcamp co-student), Parankush Somraj and YouTube help videos
+Openweather API, Amy Metheny and Mirek (bootcamp co-students), Parankush Somraj and YouTube help videos
